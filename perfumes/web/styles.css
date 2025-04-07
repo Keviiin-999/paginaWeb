@@ -1,0 +1,607 @@
+/* Estilos generales */
+body {
+    font-family: serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el encabezado y pie de página */
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0px; /* Redondea las esquinas con un radio de 20px */
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+footer{
+    background-color: black;
+    color: white;
+
+}
+/* Estilos para el pie d página */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+
+header .top-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 60%;
+
+}
+
+.header-second {
+    display: flex; /* Utilizar flexbox para alinear elementos */
+    justify-content: space-between; /* Alinear los elementos a la derecha */
+    align-items: center; 
+    margin-top: 20px;/* Alinear los elementos en la parte superior *//* Espaciado interno */
+}
+
+.user-actions {
+    display: flex; /* Utilizar flexbox para alinear elementos */
+    align-items: center;
+    margin-right: 50px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin-left: 33%;
+}
+#login-b {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #333; /* Color de texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Sin decoración de texto */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+#login-b:hover {
+    background-color: #ddd; /* Cambiar color de fondo al pasar el cursor */
+    color: #000; /* Cambiar color de texto al pasar el cursor */
+    cursor: pointer; /* Cambiar cursor al pasar el cursor */
+}
+
+.cart {
+    margin-right: 20px; /* Espacio a la derecha del carrito */
+}
+
+.fa-cart-shopping {
+    font-size: 24px; /* Tamaño de icono */
+    color: #333; /* Color de icono */
+}
+
+#cart-count {
+    background-color: #333; /* Color de fondo del contador */
+    color: #fff; /* Color de texto del contador */
+    font-size: 14px; /* Tamaño de fuente del contador */
+    padding: 5px 8px; /* Espaciado interno del contador */
+    border-radius: 50%; /* Bordes redondeados para formar un círculo */
+}
+    
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .user-actions {
+    display: flex;
+    align-items: center;
+}
+
+header .user-actions a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+header .user-actions .cart {
+    position: relative;
+}
+
+header .user-actions .cart a {
+    height: 30px;
+    margin-top: 20px;
+    width: 100px;
+
+}
+
+header .user-actions .cart span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+nav {
+    text-align: center;
+    background-color: white;
+    height: 0px;
+
+
+     /* Centrar el contenido del nav */
+}
+
+nav ul {
+    list-style: none; /* Eliminar los puntos de la lista */
+    padding: 0px;
+}
+
+nav ul li {
+    display: inline-block; /* Mostrar los elementos de la lista en línea */
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    color: black; /* Color de texto negro */
+    font-weight: bold; /* Letras en negrita */
+    padding: 10px; /* Espaciado alrededor del enlace */
+    border: 2px solid black; /* Borde alrededor del enlace */
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: black; /* Cambiar el fondo al pasar el cursor */
+    color: white;
+}
+
+
+/* Estilos para la sección hero */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+.hero h1{
+    font-size: 40px;
+}
+
+.hero img {
+    width: auto;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    color: black; /* Color de texto negro */
+    font-weight: bold; /* Letras en negrita */
+    padding: 10px; /* Espaciado alrededor del enlace */
+    border: 2px solid black; /* Borde alrededor del enlace */
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid whitex;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/*
+
+/* Estilos para la sección de bestsellers */
+.bestsellers {
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.bestsellers .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bestsellers .product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+}
+
+.bestsellers .product img {
+    width: 100%;
+}
+
+.bestsellers .product-details {
+    text-align: left;
+}
+
+/* Estilos para las tarjetas de productos */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product-details {
+    text-align: left;
+}
+
+.price {
+    color: green;
+}
+
+
+/* Estilos para el modal de inicio de sesión */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos para las páginas de login y registro */
+.login, .register {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.login h2, .register h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login form, .register form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login form label, .register form label {
+    font-weight: bold;
+}
+
+.login form input, .register form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login form button, .register form button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.login form p, .register form p {
+    color: red;
+    text-align: center;
+}
+
+/* Estilos adicionales */
+.countdown {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.reviews-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.reviews-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    border-bottom: 2px solid grey; /* Añadido */
+    padding-bottom: 10px; /* Añadido para espacio entre el texto y la línea */
+}
+
+.review-box {
+    display: flex;
+    gap: 40px;
+}
+
+.review {
+    background-color: #fdf9f5;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+    color: #ff6f61;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.review h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.review hr {
+    border: none;
+    border-top: 2px solid black;
+    margin-top: 10px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.hero-section h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-container img {
+    border-radius: 10px;
+    max-width: 32%;
+    height: auto;
+}
+
+.text-container {
+    background-color: #fdf9f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000000;
+    position: relative;
+}
+
+.text-container h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #000000;
+    margin-top: 8px;
+}
+
+.text-container p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.price-comparison {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.price-item {
+    text-align: left;
+}
+
+.price-item strong {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.text-container button {
+    background-color: #ff6f61;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.text-container button:hover {
+    background-color: #ff4f41;
+}
+
+
+
+.section {
+    text-align: left;
+    background-color: #ffffff;
+    margin: 120px;
+    margin-bottom: 0px; 
+    margin-top: 0px; /* Ajustado el margen alrededor de la sección */
+
+}
+
+.section h2 {
+    font-size: 28px;
+    color: #333333;
+    text-align: left;
+    max-width: 400px;
+}
+
+.section h2 strong {
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+    gap: 30px;
+}
+
+.features {
+    display: flex;
+    gap: 20px;
+    max-width: 50%;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.feature img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #333333;
+    margin: 0;
+}
+
+.image-conta {
+    flex: 1;
+    max-width: 25%;
+
+
+}
+
+.image-conta img {
+    top: 100%;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-left: 30px;
+}
+/*body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+*/
+.best-sellers {
+    padding: 40px 20px;
+    background-color: #faf6f2;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 90%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 7rem;
+}
+
+.best-sellers h2 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.fragrances {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.fragrances span {
+    font-size: 14px;
+    color: #333333;
+}
+
+.fragrances a {
+    color: #d84b4b;
+    text-decoration: none;
+}
+
+.fragrances a:hover {
+    text-decoration: underline;
+}
+
+
